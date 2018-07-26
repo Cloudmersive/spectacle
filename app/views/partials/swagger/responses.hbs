@@ -46,6 +46,24 @@
       </section>
     </div>
 
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, '{{htmlId path}}-http')">http</button>
+      <button class="tablinks" onclick="openCity(event, '{{htmlId path}}-js')">js</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="{{htmlId path}}-http" class="tabcontent">
+      <h3>http</h3>
+      <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="{{htmlId path}}-js" class="tabcontent">
+      <h3>js</h3>
+      <p>Paris is the capital of France.</p> 
+    </div>
+
+
     {{! Print examples without whitespace. }}
     <div class="doc-examples">
       {{#if produces}}
@@ -90,5 +108,8 @@
         {{/schemaReferenceContext}}
       {{/each}}
     </div>
+
+
+
   </div>
 {{/if}}
