@@ -1,10 +1,10 @@
 {
-  "name": "spectacle-docs",
+  "name": "spectaclecm-docs",
   "version": "1.0.5",
-  "description": "Generate beautiful static API documentation from OpenAPI/Swagger 2.0 specifications",
+  "description": "Cloudmersive Docs",
   "preferGlobal": true,
   "bin": {
-    "spectacle": "bin/spectacle.js"
+    "spectaclecm": "bin/spectacle.js"
   },
   "scripts": {
     "build": "node bin/spectacle -l test/fixtures/cheese.png test/fixtures/cheese.yml",
