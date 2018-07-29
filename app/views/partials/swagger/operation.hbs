@@ -60,7 +60,7 @@
 
   <div class="doc-examples">
     <h5>Code Example:</h5>
-  <iframe width="100%" height="400" frameborder="0" src="https://docs.cloudmersive.com?api={{info.title}}&description={{md description}}"></iframe>
+  <iframe width="100%" height="500" frameborder="0" src="https://docs.cloudmersive.com?api={{info.title}}&description={{md description}}"></iframe>
 </div>
 
 
@@ -89,7 +89,7 @@
 
 
 
-    {{!-- <div class="doc-copy"> --}}
+    <div class="doc-copy">
 
 {{!-- <iframe width="100%" height="400" frameborder="0" src="https://docs.cloudmersive.com?api={{info.title}}&description={{md description}}"></iframe> --}}
 
@@ -98,8 +98,8 @@
         {{>swagger/request-body consumes=consumes body=_request_body}}
       {{/if}}
 
-      {{>swagger/parameters parameters=parameters}}
-    </div> --}}
+      {{>swagger/parameters parameters=parameters}} --}}
+    </div>
 
 
 {{!-- EXAMPLE_SECTION_START --}}
