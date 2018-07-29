@@ -3,7 +3,40 @@
   @param {object} $context$ the whole swagger definition
   @api public
 --}}
+
+
+
 <nav id="nav" role="navigation">
+<br/>
+<select id="UrlList" onchange="doNavigate()">
+  <option value="/docs/nlp.asp">NLP API</option>
+  <option value="/docs/ocr.asp">OCR API</option>
+  <option value="/docs/image.asp">Image Processing API</option>
+  <option value="/docs/convert.asp">Convert API</option>
+</select>
+
+<script>
+    var curPath = window.location.href.toString();
+
+    var x= document.getElementById("UrlList");
+
+    for(i=0; i<x.options.length;i++){
+
+    if (curPath.endsWith(x.options[i].value))
+    {
+      x.options[i].selected = true;
+      break;
+    }
+
+    //Add operations here
+
+    }
+
+    function doNavigate() {
+        window.location.href = document.getElementById("UrlList").value;
+    }
+</script>
+
   <h5>Topics</h5>
   {{#unless info.x-spectacle-hide}}
     <a href="#introduction">Introduction</a>
