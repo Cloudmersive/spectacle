@@ -6,6 +6,8 @@
   @api public
 --}}
 
+
+
 <div id="operation-{{htmlId path}}-{{htmlId method}}" class="operation panel"
   data-traverse-target="operation-{{htmlId path}}-{{htmlId method}}">
   {{#if tags}}
@@ -55,6 +57,9 @@
   {{/if}}
 
   <div class="doc-row">
+
+    <iframe width="100%" height="400" frameborder="0" src="https://docs.cloudmersive.com?api={{info.title}}&description={{md description}}"></iframe>
+
     <div class="doc-copy">
       {{! The _request_body variable is filled with the parameter `body` by the preprocessor. }}
       {{#if _show_requst_body_section}}
@@ -69,7 +74,7 @@
 
     {{! Print examples without whitespace }}
     <div class="doc-examples">
-      <iframe width="100%" height="400" frameborder="0" src="https://docs.cloudmersive.com?api={{info.title}}&description={{md description}}"></iframe>
+      {{!-- <iframe width="100%" height="400" frameborder="0" src="https://docs.cloudmersive.com?api={{info.title}}&description={{md description}}"></iframe> --}}
       
       {{#if _show_requst_body_section}}
       <section>
