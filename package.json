@@ -1,6 +1,6 @@
 {
     "name": "spectaclecm-docs",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Cloudmersive Docs",
     "preferGlobal": true,
     "bin": {
